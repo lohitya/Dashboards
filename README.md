@@ -1,22 +1,38 @@
-# Power BI Dashboards – Sales, Product, Consumer, and Order Fulfillment
+#  Business Problem
+After 2019, a consumer company began experiencing a decline in both sales and profit across all operating regions. While the business had seen steady growth in previous years, recent performance has been inconsistent and lacks clear explanation.
 
-📊 Overview
-This repository showcases a suite of Power BI dashboards built using a transactions dataset. The aim is to generate actionable business insights across sales performance, product profitability, customer behavior, and store operations. The dashboards combine interactive visuals, calculated measures and columns, and professional design to support data-driven decision-making.
+Leadership is increasingly concerned and wants to understand what is driving the downturn. Specifically, they lack visibility into:
 
+    Which product categories and individual products are still performing well
+    
+    Which offerings are underperforming or dragging overall profitability down
+    
+    How customer behavior is shifting by segment, location, and order type
+    
+    Whether operational issues — particularly delivery delays — are affecting revenue or satisfaction?
+
+**Business Objective**
+
+The goal is to create an end-to-end Power BI reporting solution that:
+
+Uncovers the root causes behind the decline
+
+Highlights growth opportunities
+
+Supports targeted interventions in product strategy, customer engagement, and operational improvement
+    
+    
 #  1. Sales Dashboard
 KPIs:
 
-    Total Sales
-    
-    Profit
-    
-    Total Orders
-    
-    Quantity Sold
-    
-    Total Customers
-    
-    Average Delivery Time
+    Total Sales, Profit, Total Orders, Quantity Sold,Total Customers, Average Delivery Time
+
+
+Insights:
+
+Between 2019 and 2021, although overall sales steadily declined across all regions, profit margins remained strong, with all product categories generating over 50% profit relative to sales during this period.
+
+-  This suggests that the issue is not directly tied to pricing or cost inefficiencies, but may stem from a drop in demand, market shifts, or reduced volume, especially in underperforming categories or regions.
 
 Visuals:
 
@@ -32,34 +48,30 @@ Visuals:
 
 Slicers:
 
-- Order Date
+- Order Date, Product Category,Store Type (Online, Physical),Continent, Country
 
-- Product Category
-
-- Store Type (Online, Physical)
-
-- Continent
-
-- Country
-
-Analysis:
-This dashboard tracks store performance over time and across geographies. It highlights profitability trends, year-over-year growth, and category-level performance using a custom date table and DAX-based calculated fields.
 
 # 2. Product Dashboard
 
 KPIs:
 
-    Average Cost (Measure)
-    
-    Average Price (Measure)
-    
-    Average Delivery Days (Measure)
-    
-    Total Sales
-    
-    Profit
-    
-    Quantity Sold
+    Average Cost (Measure), Average Price (Measure), Average Delivery Days (Measure), Total Sales, Profit, Quantity Sold
+
+**Insights:**
+
+Drastic Decline in Quantity Sold Post-2019:
+
+There has been a significant drop in the quantity of products sold across all categories since 2019, which has led to a steep decline in both sales and profit — even though average prices and profit margins remained relatively stable.
+
+This suggests that the issue is volume-driven, rather than pricing or cost-related.
+
+Potential Contributing Factors:
+
+- Low Product Visibility: Products may not be reaching the right audiences due to ineffective marketing or suboptimal placement on online platforms or in stores.
+
+- Rising Market Competition: Competitor brands may have introduced more innovative or better-priced alternatives, capturing customer attention and loyalty.
+
+- Shifting Customer Preferences: Existing product offerings may no longer align with what customers are actively seeking post-2019, especially in a fast-moving consumer electronics market.
 
 Visuals:
 
@@ -79,36 +91,44 @@ Slicers:
 
 Order Date
 
-Analysis:
-The Product Dashboard delivers deep insights into pricing, sales volume, and product-level profitability. The scatter plot enables pricing efficiency analysis, while dynamic segmentation highlights both bestsellers and underperforming products.
 
 # 3. Consumer Dashboard
 
 KPIs:
+ 
+    Total Sales, Total Profit, Average Order Value (AOV), Total Customers, Number of Orders, Average Delivery Time
 
-    Total Sales
-    
-    Total Profit
-    
-    Average Order Value (AOV)
-    
-    Total Customers
-    
-    Number of Orders
-    
-    Average Delivery Time
+**Consumer Insights**
+
+Senior Segment Drives Sales:
+The 65+ age group contributes the highest share of total sales, making them the most valuable customer segment in the current landscape.
+
+Gender-Based Contribution:
+While sales are relatively balanced, male customers show a slightly higher contribution to overall sales.
+
+Loyal Customers = Higher Profitability:
+Returning customers account for over 70% of both sales and profit, indicating strong retention but limited new customer acquisition.
+
+Limited New Customer Growth (2019–2021):
+Only 27% of customers were new during this period, highlighting a potential challenge in expanding the customer base.
+
+Data Gap in Marketing:
+No available marketing data limits the ability to assess promotional effectiveness or customer acquisition channels.
+
+**Recommendations**
+
+Prioritize the 65+ Segment:
+Develop tailored experiences, product bundles, or loyalty programs that cater to this high-value demographic to reinforce retention and lifetime value.
+
+Reignite New Customer Acquisition:
+Conduct qualitative or survey-based research to identify what younger customers seek in electronics and why they may not be purchasing.
+
+Build Targeted Marketing Strategies:
+Invest in capturing and analyzing marketing campaign data. Use it to improve outreach to younger demographics and optimize return on marketing spend.
 
 Slicers:
 
-- Age Group,
-  
-- Store Type,
-  
-- Order Date,
-  
-- Customer Continent,
-  
-- Customer Gender
+ Age Group, Store Type, Order Date, Customer Continent, Customer Gender
 
 Visuals:
 
@@ -122,29 +142,20 @@ Visuals:
     
     Country-wise Sales, Profit, and Orders (Matrix)
 
-Analysis:
-This dashboard explores consumer patterns by demographics and geography. Age groups and customer type (new/returning) are derived using calculated columns, enabling segmentation for marketing and retention strategies.
 
 # 4. Order Fulfillment & Store Performance Dashboard
 
 KPIs:
 
-    Total Sales
-    
-    Profit
-    
-    Number of Orders
-    
-    Quantity Sold
-    
-    Average Order Value
-    
-    Total Customers
+    Total Sales, Profit, Number of Orders ,Quantity Sold, Average Order Value, Total Customers
+
+Insights:
+
+Majority of orders(77%) are from physical stores. This shows the client needs a good online presence, brand imaging and marketing stratergy since no of oreders has been declining .
 
 Slicers:
-- Store Country,
 
-- Order Date
+Store Country, Order Date
 
 Visuals:
 
@@ -158,21 +169,23 @@ Visuals:
     
     Customer Type (Returning vs. New - Column Chart using Calculated Column)
 
-Analysis:
-This dashboard evaluates store performance by format and delivery efficiency. It segments customers and identifies growth in new store performance, aiding operational and marketing strategy.
 
-# 💼 Business Summary
-This BI project analyzes transactional data across key business areas, aiming to support data-informed decisions:
 
-✅ 1. Understand Store Performance
-The Sales Dashboard evaluates store performance by continent and year, highlights profitable product categories, and visualizes year-on-year growth.
+# Executive Insights & Recommendations
 
-✅ 2. Evaluate Product Performance & Profitability
-The Product Dashboard pinpoints top 5 and bottom 5 products by sales and highlights high-performing brands. A scatter plot visualizes each product’s average cost vs. average price, helping spot underpriced or overpriced products. 
+- Post-2019, sales declined across all regions despite strong profit margins, pointing to demand issues rather than pricing inefficiencies.
 
-✅ 3. Analyze Consumer Behavior
-The Consumer Dashboard segments customers by gender, age group, and type (new vs. returning), providing insights for personalized engagement strategies.
+- Product volume sold dropped significantly, suggesting reduced consumer interest or low visibility in a competitive market.
 
-✅ 4. Monitor Order Fulfillment & Store Operations
-The Order Fulfillment Dashboard tracks delivery status, evaluates new store performance, and distinguishes between physical and online store performance.
+- The 65+ age group drives the highest sales, highlighting an opportunity to deepen engagement with this segment.
 
+- New customer acquisition is weak (only 27%), while returning customers contribute over 70% of revenue and profit.
+
+- Most orders (77%) come from physical stores, indicating underperformance and low adoption of the online channel.
+
+- Lack of marketing data limits understanding of campaign impact or acquisition effectiveness.
+
+# Recommendations:
+- Focus on improving product visibility, revitalizing underperforming categories, and enhancing the online store experience. 
+- Tailor offerings for senior customers and design marketing strategies to attract and convert new customer segments.
+- Begin capturing marketing and campaign data for better ROI tracking.
